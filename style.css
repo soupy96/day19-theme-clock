@@ -5,8 +5,8 @@
 }
 
 :root {
-  --primary-color: #000000;
-  --secondary-color: #ffffff;
+  --primary-color: #000;
+  --secondary-color: #fff;
 }
 
 html {
@@ -14,12 +14,12 @@ html {
 }
 
 html.dark {
-  --primary-color: #ffffff;
-  --secondary-color: #333333;
+  --primary-color: #fff;
+  --secondary-color: #333;
 }
 
 html.dark {
-  background-color: #111111;
+  background-color: #111;
   color: var(--primary-color);
 }
 
@@ -30,7 +30,7 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  margin: 0px;
+  margin: 0;
 }
 
 .toggle {
@@ -69,6 +69,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
+  transition: all 0.5s ease-in;
 }
 
 .needle.hour {
@@ -114,7 +115,7 @@ body {
 }
 
 .date {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 14px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
